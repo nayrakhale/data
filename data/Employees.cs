@@ -21,5 +21,10 @@ namespace data
         {
 
         }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
