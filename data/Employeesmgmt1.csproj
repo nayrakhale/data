@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="departnents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departnents.Designer.cs">
+      <DependentUpon>departnents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="departnents.resx">
+      <DependentUpon>departnents.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
