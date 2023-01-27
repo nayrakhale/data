@@ -182,8 +182,9 @@ namespace EmployeeMgmt1
         public object EmployeeList { get; private set; }
         //employeelist
         public object DepCb { get; private set; }
-       
+       //depcb
         public object DOBTb { get; private set; }
+        //dobtable
         public object JDateTb { get; private set; }
         public object DailySalTb { get; private set; }
         public object EmpNameTb { get; private set; }
