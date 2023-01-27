@@ -43,7 +43,7 @@ namespace data
             if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
                 if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
-                {
+                {//password
                     Employees Obj = new Employees();
                     Obj.Show();
                     this.Hide();
