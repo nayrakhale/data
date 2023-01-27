@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using data;
 
-namespace EmployeeMgmt1
+namespace data
 {
-    public partial class Departments : Form
+    public partial class Departnents : Form
     {
         Functions Con;
-        public Departments()
+        public Departnents()
         {
             InitializeComponent();
             Con = new Functions();
@@ -29,14 +29,14 @@ namespace EmployeeMgmt1
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
-            DepList.DataSource= Con.GetData(Query);
+            DepList.DataSource = Con.GetData(Query);
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                if (DepNameTb.Text== "")
+                if (DepNameTb.Text == "")
                 {
                     MessageBox.Show("missing data!!!");
                 }
@@ -143,6 +143,13 @@ namespace EmployeeMgmt1
             login Obj = new login();
             Obj.Show();
             this.Hide();
+        }
+
+        private class Functions
+        {
+            public Functions()
+            {
+            }
         }
     }
 

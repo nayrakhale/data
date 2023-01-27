@@ -13,6 +13,7 @@ namespace EmployeeMgmt1
     public partial class login : Form
     {
         public object PasswordTb { get; private set; }
+        public object UNameTb { get; private set; }
 
         public login()
         {
@@ -41,21 +42,24 @@ namespace EmployeeMgmt1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (UNameTb.Text == "" || PasswordTb.Text == "")
+            if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
-                MessageBox.Show("Missing Data!!!");
-            }
-            else if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
-            {
-                Employees Obj = new Employees();
-                Obj.Show();
-                this.Hide();
+                if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+                {
+                    Employees Obj = new Employees();
+                    Obj.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("wrong user name or password!!!");
+                    UNameTb.Text = "";
+                    PasswordTb.Text = "";
+                }
             }
             else
             {
-                MessageBox.Show("wrong user name or password!!!");
-                UNameTb.Text = "";
-                PasswordTb.Text = "";
+                MessageBox.Show("Missing Data!!!");
             }
         }
 
@@ -69,5 +73,9 @@ namespace EmployeeMgmt1
             UNameTb.Text = "";
             PasswordTb.Text = "";
         }
+    }
+
+    internal class Employees
+    {
     }
 }

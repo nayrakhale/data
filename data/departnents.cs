@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace data
 {
-    public partial class departnents : Form
+    public partial class Departnents : Form
     {
-        public departnents()
+        public Departnents()
         {
             InitializeComponent();
         }
