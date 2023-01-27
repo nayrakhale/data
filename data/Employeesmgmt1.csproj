@@ -80,6 +80,7 @@
     <Compile Include="Employees1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
