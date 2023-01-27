@@ -76,6 +76,7 @@ namespace data
 
         private void ResetLbl_Click(object sender, EventArgs e)
         {
+            //Resettaple
             UNameTb.Text = "";
             PasswordTb.Text = "";
         }
