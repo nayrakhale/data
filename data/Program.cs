@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using data;
 using Employeesmgmt1;
 
 
@@ -17,7 +18,7 @@ namespace Employeesmgmt1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Employees());
+            Application.Run(new departnents());
 
 
         }

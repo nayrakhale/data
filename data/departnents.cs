@@ -17,6 +17,11 @@ namespace data
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void label6_Click(object sender, EventArgs e)
         {
 
