@@ -13,6 +13,7 @@ namespace EmployeeMgmt1
 {
     public partial class Employees : Form
     {
+        //class employees
         Functions Con;
         public Employees()
         {
