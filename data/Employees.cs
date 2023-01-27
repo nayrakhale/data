@@ -76,7 +76,7 @@ namespace EmployeeMgmt1
             DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
             //value member
             DepCb.DataSource = Con.GetData(Query);
-
+            //data souce
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -90,6 +90,7 @@ namespace EmployeeMgmt1
                 {
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();
+                    //select Item
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string DOB = DOBTb.Value.ToString();
                     string JDate = JDateTb.Value.ToString();
