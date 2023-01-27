@@ -50,7 +50,7 @@ namespace EmployeeMgmt1
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-//
+//textbox1
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
