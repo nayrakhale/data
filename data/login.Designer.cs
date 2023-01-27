@@ -45,7 +45,8 @@ namespace data
             //if statement to when enter your paassword
             if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
-                if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+                //to when enter password and admin
+                if (UNameTb.Text == "Admin" && PasswordTb.text == "Password")
                 {
                     //password
                     Employees Obj = new Employees();
