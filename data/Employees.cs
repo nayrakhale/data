@@ -63,7 +63,7 @@ namespace EmployeeMgmt1
 
         private void Employees_Load(object sender, EventArgs e)
         {
-
+            // Employees_Load
         }
 
         private void button2_Click(object sender, EventArgs e)
