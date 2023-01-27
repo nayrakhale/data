@@ -20,12 +20,6 @@ namespace EmployeeMgmt1
             ShowEmp();
             GetDepartment();
         }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
         private void ShowEmp()
         {
             try
