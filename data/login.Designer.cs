@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EmployeeMgmt1
+namespace data
 {
     public partial class login : Form
     {
+        private readonly object UNameTb;
+
         public object PasswordTb { get; private set; }
-        public object UNameTb { get; private set; }
 
         public login()
         {
@@ -42,13 +43,7 @@ namespace EmployeeMgmt1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1_Click(sender, e, PasswordTb);
-        }
-
-        private void button1_Click(object sender, EventArgs e, object passwordTb)
-        {
-            if (UNameTb.Text != ""
-                && passwordTb.Text != "")
+            if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
                 if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
                 {
@@ -80,12 +75,4 @@ namespace EmployeeMgmt1
             PasswordTb.Text = "";
         }
     }
-
-    internal class Employees
-    {
-        internal void Show()
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
+}}
