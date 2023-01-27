@@ -107,6 +107,7 @@ namespace EmployeeMgmt1
 
 
                     EmpNameTb.Text = "";
+                    //empname table
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
