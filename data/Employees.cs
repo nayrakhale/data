@@ -43,11 +43,12 @@ namespace EmployeeMgmt1
 
         private void label3_Click(object sender, EventArgs e)
         {
+            //label3
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            //text changed
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
