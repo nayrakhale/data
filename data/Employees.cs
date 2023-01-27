@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using data;
 
 namespace EmployeeMgmt1
 {
@@ -21,7 +22,7 @@ namespace EmployeeMgmt1
             GetDepartment();
         }
         private void ShowEmp()
-        {//show Emp
+        {
             try
             {
                 string Query = "Select * from EmployeeTb1";
@@ -33,50 +34,48 @@ namespace EmployeeMgmt1
             }
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-        //textbox1
+
         private void label3_Click(object sender, EventArgs e)
         {
-       //label3
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-//textbox3
+
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-//textbox1
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-//combobox1
+
         }
 
         private void Employees_Load(object sender, EventArgs e)
         {
-            //opject sender 
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //button2 click
+
         }
 
         private void GetDepartment()
         {
             string Query = "Select * from DepartmentTb1";
             DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
-            //display member
             DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
-            //value member
             DepCb.DataSource = Con.GetData(Query);
-            //data souce
+
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -90,24 +89,18 @@ namespace EmployeeMgmt1
                 {
                     string Name = EmpNameTb.Text;
                     string Gender = GenCb.SelectedItem.ToString();
-                    //select Item
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string DOB = DOBTb.Value.ToString();
-                    //table dataase
                     string JDate = JDateTb.Value.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
                     string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
-                    //query sting
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
                     Con.SetData(Query);
                     ShowEmp();
                     MessageBox.Show("Emoloyee Updated!!!");
-                    //messagebox to show
                     EmpNameTb.Text = "";
-                    //empname table
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
-
                     DepCb.SelectedIndex = -1;
                 }
             }
@@ -183,15 +176,6 @@ namespace EmployeeMgmt1
             }
         }
         int key = 0;
-        private object DailySalTb;
-
-        public object EmployeeList { get; private set; }
-        public object EmpNameTb { get; private set; }
-        public object GenCb { get; private set; }
-        public object DepCb { get; private set; }
-        public object JDateTb { get; private set; }
-        public object DOBTb { get; private set; }
-
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
@@ -207,16 +191,13 @@ namespace EmployeeMgmt1
             else
             {
                 key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
-                //key to table
             }
         }
 
         private void label9_Click(object sender, EventArgs e)
-        {
+        {//lapel9
             login Obj = new login();
-            //login table
             Obj.Show();
-            //object show
             this.Hide();
         }
     }
