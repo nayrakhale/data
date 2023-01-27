@@ -164,6 +164,7 @@ namespace EmployeeMgmt1
                     string Gender = GenCb.SelectedItem.ToString();
                     //string gender
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                    //int dep
                     string DOB = DOBTb.Value.Date.ToString();
                     string JDate = JDateTb.Value.Date.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
