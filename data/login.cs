@@ -12,10 +12,7 @@ namespace data
 {
     public partial class login : Form
     {
-        public login()
-        {
-            InitializeComponent();
-        }
+        public login() => InitializeComponent();
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {

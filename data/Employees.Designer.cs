@@ -1,4 +1,4 @@
-﻿namespace data
+﻿namespace EmployeeMgmt1
 {
     partial class Employees
     {

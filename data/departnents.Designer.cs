@@ -86,11 +86,7 @@ namespace data
         {
             try
             {
-                if (DepNameTb.Text == "")
-                {
-                    MessageBox.Show("missing data!!!");
-                }
-                else
+                if (DepNameTb.Text != "")
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";
@@ -99,6 +95,10 @@ namespace data
                     ShowDepartments();
                     MessageBox.Show("Department Updated!!!");
                     DepNameTb.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("missing data!!!");
                 }
             }
             catch (Exception Ex)
@@ -111,7 +111,7 @@ namespace data
         {
             try
             {
-                if (DepNameTb.Text == "")
+                if(DepNameTb.Text == "")
                 {
                     MessageBox.Show("missing data!!!");
                 }
