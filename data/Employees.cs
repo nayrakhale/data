@@ -182,6 +182,7 @@ namespace EmployeeMgmt1
         public object DepCb { get; private set; }
         public object DOBTb { get; private set; }
         public object JDateTb { get; private set; }
+        public object DailySalTb { get; private set; }
 
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
