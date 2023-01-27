@@ -38,7 +38,7 @@ namespace EmployeeMgmt1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //text changed
         }
 
         private void label3_Click(object sender, EventArgs e)
