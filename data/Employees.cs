@@ -178,11 +178,15 @@ namespace EmployeeMgmt1
         int key = 0;
 
         public object GenCb { get; private set; }
+        //gencb
         public object EmployeeList { get; private set; }
+       
         public object DepCb { get; private set; }
+       
         public object DOBTb { get; private set; }
         public object JDateTb { get; private set; }
         public object DailySalTb { get; private set; }
+        public object EmpNameTb { get; private set; }
 
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
