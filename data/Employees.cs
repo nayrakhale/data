@@ -216,7 +216,7 @@ namespace EmployeeMgmt1
             login Obj = new login();
             //login table
             Obj.Show();
-
+            //object show
             this.Hide();
         }
     }
