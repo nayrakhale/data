@@ -60,7 +60,7 @@ namespace EmployeeMgmt1
 
         private void Employees_Load(object sender, EventArgs e)
         {
-            //opject senderخلاتثؤف سثىيث
+            //opject sender 
         }
 
         private void button2_Click(object sender, EventArgs e)
