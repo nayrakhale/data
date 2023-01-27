@@ -91,6 +91,7 @@ namespace EmployeeMgmt1
                     string Gender = GenCb.SelectedItem.ToString();
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string DOB = DOBTb.Value.ToString();
+                    //string DOB
                     string JDate = JDateTb.Value.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
                     string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
