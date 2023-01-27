@@ -12,9 +12,16 @@ namespace EmployeeMgmt1
 {
     public partial class login : Form
     {
+        public object PasswordTb { get; private set; }
+
         public login()
         {
             InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

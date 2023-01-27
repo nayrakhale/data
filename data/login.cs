@@ -17,6 +17,11 @@ namespace data
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
