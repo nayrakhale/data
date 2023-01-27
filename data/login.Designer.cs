@@ -62,6 +62,7 @@ namespace data
                     UNameTb.Text = "";
                     //Uname tale
                     PasswordTb.Text = "";
+                    //passTaple
                 }
             }
             else
