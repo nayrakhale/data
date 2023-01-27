@@ -180,7 +180,7 @@ namespace EmployeeMgmt1
         public object GenCb { get; private set; }
         //gencb
         public object EmployeeList { get; private set; }
-       
+        //employeelist
         public object DepCb { get; private set; }
        
         public object DOBTb { get; private set; }
