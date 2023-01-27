@@ -190,6 +190,7 @@ namespace EmployeeMgmt1
         public object DailySalTb { get; private set; }
         //dailysaltable
         public object EmpNameTb { get; private set; }
+        //empnametable
 
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
