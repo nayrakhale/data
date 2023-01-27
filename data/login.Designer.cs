@@ -42,7 +42,13 @@ namespace EmployeeMgmt1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (UNameTb.Text != "" && PasswordTb.Text != "")
+            button1_Click(sender, e, PasswordTb);
+        }
+
+        private void button1_Click(object sender, EventArgs e, object passwordTb)
+        {
+            if (UNameTb.Text != ""
+                && passwordTb.Text != "")
             {
                 if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
                 {
@@ -77,5 +83,9 @@ namespace EmployeeMgmt1
 
     internal class Employees
     {
+        internal void Show()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
