@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Xml.Linq;
 using System.Runtime.Remoting.Contexts;
+using System.Security.Cryptography;
 
 namespace EmployeeMgmt1
 {

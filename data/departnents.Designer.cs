@@ -158,6 +158,11 @@ namespace data
             public Functions()
             {
             }
+
+            internal void SetData(string query)
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 
