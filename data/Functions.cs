@@ -31,6 +31,7 @@ namespace EmployeeMgmt1
             dt = new DataTable();
             //new dataTable
             sda = new SqlDataAdapter(Query, ConStr);
+            //new sql dataadapter
             sda.Fill(dt);
             return dt;
         }
