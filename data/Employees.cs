@@ -72,7 +72,9 @@ namespace EmployeeMgmt1
         {
             string Query = "Select * from DepartmentTb1";
             DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
+            //display member
             DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
+            //value member
             DepCb.DataSource = Con.GetData(Query);
 
         }
