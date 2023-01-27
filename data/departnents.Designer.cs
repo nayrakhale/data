@@ -145,4 +145,11 @@ namespace EmployeeMgmt1
             this.Hide();
         }
     }
+
+    internal class Salary
+    {
+        public Salary()
+        {
+        }
+    }
 }
