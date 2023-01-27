@@ -59,6 +59,7 @@ namespace EmployeeMgmt1
         int key = 0;
 
         public object DepNameTb { get; private set; }
+        public object DepList { get; private set; }
 
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
