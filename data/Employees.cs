@@ -176,12 +176,20 @@ namespace EmployeeMgmt1
             }
         }
         int key = 0;
+
+        public object GenCb { get; private set; }
+        public object EmployeeList { get; private set; }
+        public object DepCb { get; private set; }
+        public object DOBTb { get; private set; }
+        public object JDateTb { get; private set; }
+
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //employeelist_cellcontent
             EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
             //empnametb
             GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
+
             DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
             DOBTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
             JDateTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
