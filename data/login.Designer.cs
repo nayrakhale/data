@@ -32,7 +32,7 @@ namespace data
 
         private void login_Load(object sender, EventArgs e)
         {
-
+            //loginload
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
