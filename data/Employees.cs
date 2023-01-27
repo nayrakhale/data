@@ -207,13 +207,16 @@ namespace EmployeeMgmt1
             else
             {
                 key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+                //key to table
             }
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
             login Obj = new login();
+            //login table
             Obj.Show();
+
             this.Hide();
         }
     }
