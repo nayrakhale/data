@@ -82,6 +82,7 @@ namespace data
             //Resettaple
             UNameTb.Text = "";
             PasswordTb.Text = "";
+            //enter again password 
         }
     }
 }
