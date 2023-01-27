@@ -178,6 +178,7 @@ namespace EmployeeMgmt1
                     //st data
                     ShowEmp();
                     MessageBox.Show("Emoloyee Updated!!!");
+                    //MessageBox
                     EmpNameTb.Text = "";
                     DailySalTb.Text = "";
                     GenCb.SelectedIndex = -1;
