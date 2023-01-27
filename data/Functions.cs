@@ -23,6 +23,7 @@ namespace EmployeeMgmt1
             Con = new SqlConnection(ConStr);
             //new sql connection
             Cmd = new SqlCommand();
+            //new sql command
             Cmd.Connection = Con;
         }
         public DataTable GetData(string Query)
