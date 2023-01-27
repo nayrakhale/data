@@ -57,6 +57,7 @@ namespace data
                     //message show
 
                     UNameTb.Text = "";
+                    //Uname tale
                     PasswordTb.Text = "";
                 }
             }
