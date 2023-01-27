@@ -175,6 +175,7 @@ namespace EmployeeMgmt1
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate,  key);
                     //query
                     Con.SetData(Query);
+                    //st data
                     ShowEmp();
                     MessageBox.Show("Emoloyee Updated!!!");
                     EmpNameTb.Text = "";
