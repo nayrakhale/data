@@ -54,6 +54,8 @@ namespace data
                 else
                 {
                     MessageBox.Show("wrong user name or password!!!");
+                    //message show
+
                     UNameTb.Text = "";
                     PasswordTb.Text = "";
                 }
