@@ -20,6 +20,12 @@ namespace EmployeeMgmt1
             Con = new Functions();
             ShowDepartments();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
@@ -51,6 +57,9 @@ namespace EmployeeMgmt1
             }
         }
         int key = 0;
+
+        public object DepNameTb { get; private set; }
+
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DepNameTb.Text = DepList.SelectedRows[0].Cells[1].Value.ToString();
