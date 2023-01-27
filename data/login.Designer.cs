@@ -21,10 +21,7 @@ namespace data
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+        private void InitializeComponent() => throw new NotImplementedException();
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

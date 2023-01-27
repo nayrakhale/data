@@ -21,7 +21,7 @@ namespace EmployeeMgmt1
             GetDepartment();
         }
         private void ShowEmp()
-        {
+        {//show Emp
             try
             {
                 string Query = "Select * from EmployeeTb1";
