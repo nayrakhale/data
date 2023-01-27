@@ -97,7 +97,7 @@ namespace EmployeeMgmt1
                    
                     
                     string Query = "insert into EmployeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
-                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
+                    Query = string.Format(Query, Name, Gender, Dep, DOB, JDate);
                     Con.SetData(Query);
                     ShowEmp();
                     MessageBox.Show("Emoloyee Updated!!!");
@@ -115,6 +115,7 @@ namespace EmployeeMgmt1
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            //deletbutton
             try
             {
                 if (key == 0)
