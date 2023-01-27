@@ -23,7 +23,15 @@ namespace data
 
         private void InitializeComponent()
         {
-            throw new NotImplementedException();
+            this.SuspendLayout();
+            // 
+            // Departnents
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "Departnents";
+            this.Text = "z";
+            this.ResumeLayout(false);
+
         }
 
         private void ShowDepartments()
