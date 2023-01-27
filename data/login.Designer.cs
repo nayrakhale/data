@@ -42,6 +42,7 @@ namespace data
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //if statement to when enter your paassword
             if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
                 if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
