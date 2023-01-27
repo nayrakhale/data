@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EmployeeMgmt1;
 
 namespace data
 {
@@ -15,7 +16,7 @@ namespace data
         private readonly object UNameTb;
 
         public object PasswordTb { get; private set; }
-
+        //password table
         public login()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace data
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -43,7 +45,8 @@ namespace data
             if (UNameTb.Text != "" && PasswordTb.Text != "")
             {
                 if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
-                {//password
+                {
+                    //password
                     Employees Obj = new Employees();
                     Obj.Show();
                     this.Hide();
