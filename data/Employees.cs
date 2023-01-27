@@ -162,7 +162,7 @@ namespace EmployeeMgmt1
                     string Name = EmpNameTb.Text;
                     //empnametable
                     string Gender = GenCb.SelectedItem.ToString();
-                    
+                    //string gender
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string DOB = DOBTb.Value.Date.ToString();
                     string JDate = JDateTb.Value.Date.ToString();
