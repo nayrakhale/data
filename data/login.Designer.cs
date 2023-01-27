@@ -13,6 +13,7 @@ namespace data
 {
     public partial class login : Form
     {
+        //make aclass called forrm
         private readonly object UNameTb;
 
         public object PasswordTb { get; private set; }
