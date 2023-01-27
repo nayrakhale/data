@@ -188,6 +188,7 @@ namespace EmployeeMgmt1
         public object JDateTb { get; private set; }
         //jdatetable
         public object DailySalTb { get; private set; }
+        //dailysaltable
         public object EmpNameTb { get; private set; }
 
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
