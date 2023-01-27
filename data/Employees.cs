@@ -55,7 +55,7 @@ namespace EmployeeMgmt1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+//combobox1
         }
 
         private void Employees_Load(object sender, EventArgs e)
