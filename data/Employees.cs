@@ -168,6 +168,7 @@ namespace EmployeeMgmt1
                     string DOB = DOBTb.Value.Date.ToString();
                     //string DOB table
                     string JDate = JDateTb.Value.Date.ToString();
+                    //string JDate
                     int Salary = Convert.ToInt32(DailySalTb.Text);
                     string Query = "Update EmployeeTb1 set EmpName = '{0}',EmpGen='{1}',EmpDep={2},EmpDOB='{3}',Empjdate='{4}',EmpSal={5} where Empid= {6}";
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary, key);
